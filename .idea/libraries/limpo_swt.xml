@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="limpo_swt">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/limpo_swt.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

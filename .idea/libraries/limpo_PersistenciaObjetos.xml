@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="limpo_PersistenciaObjetos">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/limpo_PersistenciaObjetos.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
