@@ -7,7 +7,6 @@ public class SeguradoEmpresaMediator {
 
 	private SeguradoEmpresaDAO dao = new SeguradoEmpresaDAO();
 	private static SeguradoEmpresaMediator instancia = new SeguradoEmpresaMediator();
-
 	private SeguradoEmpresaMediator() {}
 
 	public static SeguradoEmpresaMediator getInstancia() {
@@ -22,7 +21,7 @@ public class SeguradoEmpresaMediator {
 			return "CNPJ deve ter 14 caracteres";
 		}
 		if (!StringUtils.temSomenteNumeros(cnpj) || !ValidadorCpfCnpj.ehCnpjValido(cnpj)) {
-			return "CNPJ com d�gito inv�lido";
+			return "CNPJ com dígito inválido";
 		}
 		return null;
 	}
@@ -39,7 +38,7 @@ public class SeguradoEmpresaMediator {
 		if (msg != null) return msg;
 
 		if (dao.buscar(seg.getCnpj()) != null) {
-			return "CNPJ do segurado empresa j� existente";
+			return "CNPJ do segurado empresa já existente";
 		}
 
 		dao.incluir(seg);
@@ -51,7 +50,7 @@ public class SeguradoEmpresaMediator {
 		if (msg != null) return msg;
 
 		if (dao.buscar(seg.getCnpj()) == null) {
-			return "CNPJ do segurado empresa n�o existente";
+			return "CNPJ do segurado empresa não existente";
 		}
 
 		dao.alterar(seg);
@@ -60,7 +59,7 @@ public class SeguradoEmpresaMediator {
 
 	public String excluirSeguradoEmpresa(String cnpj) {
 		if (dao.buscar(cnpj) == null) {
-			return "CNPJ do segurado empresa n�o existente";
+			return "CNPJ do segurado empresa não existente";
 		}
 		dao.excluir(cnpj);
 		return null;
@@ -75,7 +74,7 @@ public class SeguradoEmpresaMediator {
 		if (StringUtils.ehNuloOuBranco(seg.getNome()))
 			return "Nome deve ser informado";
 		if (seg.getEndereco() == null)
-			return "Endere�o deve ser informado";
+			return "Endereço deve ser informado";
 		if (seg.getDataAbertura() == null)
 			return "Data da abertura deve ser informada";
 

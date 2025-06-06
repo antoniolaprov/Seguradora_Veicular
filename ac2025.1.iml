@@ -17,5 +17,11 @@
     <orderEntry type="library" name="limpo_lombok" level="project" />
     <orderEntry type="library" name="limpo_PersistenciaObjetos" level="project" />
     <orderEntry type="library" name="limpo_swt" level="project" />
+    <orderEntry type="library" name="junit-jupiter-api-5.10.0" level="project" />
+    <orderEntry type="library" name="junit-jupiter-engine-5.10.0" level="project" />
+    <orderEntry type="library" name="junit-platform-console-standalone-1.10.0" level="project" />
+    <orderEntry type="library" name="lombok" level="project" />
+    <orderEntry type="library" name="PersistenciaObjetos" level="project" />
+    <orderEntry type="library" name="swt (2)" level="project" />
   </component>
 </module>
