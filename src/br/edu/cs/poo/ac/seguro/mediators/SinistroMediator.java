@@ -50,7 +50,7 @@ public class SinistroMediator {
 		if (dados.getPlaca() == null || dados.getPlaca().trim().isEmpty()) {
 			excecao.adicionarMensagem("Placa do Veiculo deve ser informada");
 		} else if (daoVeiculo.buscar(dados.getPlaca()) == null) {
-			excecao.adicionarMensagem("Veiculo nao cadastrado");
+			excecao.adicionarMensagem("Veiculo não cadastrado");
 		}
 
 		if (dados.getUsuarioRegistro() == null || dados.getUsuarioRegistro().trim().isEmpty()) {
